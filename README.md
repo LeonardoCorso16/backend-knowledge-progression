@@ -63,7 +63,8 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 #### **Request**
 
-	* Está relacionado à o pedido feito ao servidor
+* Está relacionado à o pedido feito ao servidor.
+
  * Formado pelas seguintes entidades:
     * Linha de pedido
        * **Identificador do método:** Tipo de ação que esperamos do servidor (ex: GET, POST).
@@ -114,7 +115,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 3. **Rendering Engine** - Exibe o conteúdo solicitado.
 4. **Networking** -  Responsável pelas chamadas de rede, como solicitações HTTP. Poussi a interface independente da plataforma e sub-implementação para cada plataforma.
 5. **Javascript Interpreter** - Analisa e executa o código javascript.
-6. **UI Backend ** - Exibe uma interface genérica que não é específica da plataforma. Sob a interface, utiliza os métodos da interface do usuário do sistema operacional.
+6. **UI Backend** - Exibe uma interface genérica que não é específica da plataforma. Sob a interface, utiliza os métodos da interface do usuário do sistema operacional.
 7. **Data Persistence** - Refere-se à uma camada persistente, onde o navegador guarda diversos dados no disco rígido, como cookies. Definido como "banco de dados da web".
 
 ![Estrutura de um navegador](https://miro.medium.com/max/1322/1*52xFpyJc1ZQ-AN1Kc_zkwA.png)
@@ -137,7 +138,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 ​	Tratando-se de uma **Hospedagem**, o DNS atua em uma infraestrutura de subsistemas, composta por diferentes servidores que processam e transmitem informações uns para os outros.
 
-> Obs: Um bom exemplo é comprar à um setor de Telemarketing, onde o atendente transfere o cliente para o setor especializado a cada requisição específica.
+> Obs: Um bom exemplo é comprar à um setor de Telemarketing, onde o atendente transfere o cliente para o setor especializado de acordo com cada requisição específica.
 
 ​	Como funciona...
 
@@ -164,11 +165,13 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 
 
-##### Servidor Web Estático
+#### Servidor Web Estático
 
 ​	Consiste em um computador (hardware) com um servidor HTTP (software). É chamado "estático" porque o servidor envia seus arquivos **tal como foram criados e armazenados (hospedados)** ao navegador.
 
-##### Servidor Web Dinâmico
+
+
+#### Servidor Web Dinâmico
 
 ​	Consiste em um servidor web estático com software adicional, mais comumente um servidor de aplicações e um banco de dados. É chamado "dinâmico" porque o servidor de aplicações **atualiza os arquivos hospedados antes de enviá-los** ao navegador através do servidor HTTP.
 
