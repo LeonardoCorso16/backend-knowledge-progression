@@ -1,4 +1,5 @@
 # Backend knowledge progression
+
 Estudando e compartilhando todo o conhecimento referente as etapas do **[back-end roadmap](https://roadmap.sh/backend)** que foi criado por [@kamranahmedse](https://github.com/kamranahmedse).
 
 # Internet
@@ -65,7 +66,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
       	* **Cabeçalho Geral**
       	* **Cabeçalho de Requisição**
       	* **Cabeçalho de Entidades**
-      	* Mensagem
+      	* **Mensagem**
 
 ![Requisição http](https://documentation.help/DogeTool-HTTP-Requests-vt/http_requestmessageexample.png)
 
@@ -252,7 +253,7 @@ Simple Object Access Protocol (SOAP), ou Protocolo de acesso à objetos simples,
 
 #### Estrutura SOAP Message
 
-* **SOAP Envelope :**  É o primeiro elemento do  documento e é utilizado para encapsular toda a menssagem SOAP.
+* **SOAP Envelope :**  É o primeiro elemento do  documento e é utiliMensagemzado para encapsular toda a menssagem SOAP.
 * **SOAP Header :** É o elemento que possui informações de atributos e metadados da requisição.
 * **SOAP Body :** É o elemento que possui os detalhes da mensagem.
 
@@ -278,7 +279,7 @@ Simple Object Access Protocol (SOAP), ou Protocolo de acesso à objetos simples,
 
 #### O que é REST
 
-Representational State Transfer, ou Transferência Representacional de Estado, é um estilo de arquitetura  de software que define a implementação  de um web service. Aceita formatos como  XML, JSON  ou outros.
+Representational State Transfer, ou Transferência Representacional de Estado, é um estilo de arquitetura  de software que define a implearquitetura monolíticamentação  de um web service. Aceita formatos como  XML, JSON  ou outros. REST utiliza os métodos HTTP para representar a operação a ser realizada em um determinado recurso.
 
 > REST não é um protocolo, e sim um design  de arquitetura para web services.
 
@@ -301,8 +302,6 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 <p align="center">
     <img src="https://img.mandic.com.br/blog/2019/09/JSON-formato.png" alt="estrutura json"/>
 </p>
-
-
 
 
 
@@ -371,7 +370,78 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 
 ### Monolithic Apps
 
+A **arquitetura monolítica**, descreve uma única aplicação de software em camadas no qual a interface de usuário e código de acesso  aos dados são combinado em um único programa  a partir de uma única plataforma.  Sendo assim uma aplicação autônoma e independente  de outras aplicações.
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/jeffhsta/fundamentos_arquitetura/master/monolito.png"\>
+</p>
+
+
+
+#### Pros e Contra
+
+**Pros**
+
+* Baixa complexidade
+* Monitoramento simplificado
+
+**Contra**
+
+* Stack única
+* Compartilhamento de recursos
+* Acoplamento
+* Escalabilidade complexa
+
+
+
 ### Microservices
+
+A **arquitetura de micro serviços** é utilizada para desenvolver uma aplicação como um conjunto de pequenos **serviços**, cada um funcionando em seu próprio processo. Cada **serviço** é desenvolvido em torno de um conjunto de regras de negócio específico, e é implementado de forma independente.
+
+##### Microservice #1
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/jeffhsta/fundamentos_arquitetura/master/microservicos1.png"\>
+</p>
+
+
+
+##### Microservice #2
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/jeffhsta/fundamentos_arquitetura/master/microservicos2.png"\>
+</p>
+
+
+
+##### Microservice #3
+
+<p align="center">
+    <img src="https://raw.githubusercontent.com/jeffhsta/fundamentos_arquitetura/master/microservicos3.png"\>
+</p>
+
+
+
+#### Pros e Contra
+
+**Pros**
+
+* Stack dinâmica
+* Escalabilidade simples
+* Desacoplamento (Message broker #2)
+* Menor complexidade (gerenciador de pipeline #3)
+
+**Contra**
+
+* Stack única
+* Compartilhamento de recursos
+* Acoplamento
+* Escalabilidade complexa
+* Monitoramento complexo (Message broker #2)
+* Provisionamento complexo (Message Broker #2)
+* Dependência do gerenciador de pipeline (gerenciador de pipeline #3)
+
+
 
 ### SOA
 
@@ -390,6 +460,8 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 
 
 ## Message Brokers
+
+O message broker permite identificar o motivo de um determinado serviço ter sido incapaz de responder no momento de uma requisição.
 
 ### Kafka
 
