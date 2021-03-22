@@ -3,7 +3,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 # Internet
 
-### > Como a internet funciona ?
+### Como a internet funciona ?
 
 ​	A internet é uma rede global de computadores conectados entre si  que comunicam-se através de um conjunto de protocolos padronizados. Tudo começou na década de 1960 como um projeto pesquisa do exército Estadunidense, 20 anos depois o projeto evoluiu para uma infraestrutura pública  com o apoio de universidades públicas e empresas privadas. Ao longo do tempo surgiram novas tecnologia mas o modo como a internet funciona não mudou muito, continua sendo uma forma de conectar todos os computadores e garantir que eles encontrem sempre uma maneira de permanecerem conectados.
 
@@ -15,19 +15,9 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 ​	Quando dois computadores precisam se comunicar, ambos precisam ser conectados fisicamente (cabo ethernet), ou sem fio (wifi, bluetooth). Essa rede não está limitada somente a dois computadores,  podem ser conectados quantos você desejar. Mas a partir  do momento em que a quantidade dos computadores vão aumentando o procedimento vai ficando mais complexo. Se por exemplo, você está tentando conectar dez computadores, você precisaria de  45 cabos com 9 plugues por computador. 
 
-
-
-![Rede simples](https://mdn.mozillademos.org/files/8443/internet-schema-2.png)
-
-
-
 ​	Para solucionar o problema da quantidade de cabos foram criados os **roteadores**, que  possuem a exclusiva função de garantir que uma mensagem enviado de um determinado computador chegue ao computador de destino.
 
 ​	Se nossa rede de 10 computadores recebesse um roteador,  precisaríamos apenas de 10 cabos, um plug para cada computador  e um roteador com 10 plugues.
-
-
-
-![Conexão simples com roteador](https://mdn.mozillademos.org/files/8445/internet-schema-3.png)
 
 
 
@@ -35,23 +25,24 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 ​	Um único roteador não consegue suportar uma centenas ou milhares computadores, mas como os roteadores tratam-se de computadores também, então,  dois roteadores podem conectar-se entre si. Essa é um possibilidade que pode escalar infinitamente.
 
-![Conexão de redes com redes](https://mdn.mozillademos.org/files/8449/internet-schema-5.png) 
-
-
-
-​	A ideia de instalar cabos entre sua caso e o resto das casas ao redor do mundo não é algo possível, digamos assim.  Por isso a internet usa os cabos que existem dentro de sua casa, por exemplo a  conexão telefônica.  A infraestrutura de telefonia já faz o favor de conectar uma casa, com as outras casas do mundo, mas para que a nossa rede se conecte à  infraestrutura da telefonia, é necessário um equipamento  que é chamado de **modem**. O modem é responsável por transformar as informações da rede em informações administráveis pela  infraestrutura da telefonia e vice-versa. 
+ 	A ideia de instalar cabos entre sua caso e o resto das casas ao redor do mundo não é algo possível, digamos assim.  Por isso a internet usa os cabos que existem dentro de sua casa, por exemplo a  conexão telefônica.  A infraestrutura de telefonia já faz o favor de conectar uma casa, com as outras casas do mundo, mas para que a nossa rede se conecte à  infraestrutura da telefonia, é necessário um equipamento  que é chamado de **modem**. O modem é responsável por transformar as informações da rede em informações administráveis pela  infraestrutura da telefonia e vice-versa. 
 
 ​	Só essa conexão entre o modem e a infraestrutura  da telefonia não é o suficiente, para que isso seja possível é necessário conectarmos a rede à um **Provedor de Serviço de Internet (ISP)**. Um ISP é um empresa que gerencia **roteadores** especiais que estão interligados e, que podem acessar outros ISPs.  A internet consiste em todas essa infraestrutura de redes.
 
 
 
-![Conexão entre redes de ISPs diferentes](https://mdn.mozillademos.org/files/8453/internet-schema-7.png)
-
-
-
-### > O que é HTTP ?
+### O que é HTTP
 
 ​	O _Protocolo de Transferência de Hipertexto_ (**HTTP**), é um protocolo de camada de aplicativo_¹_ para a transmissão de documentos de hipermídia, como o HTML.  Foi projetado para comunicação entre navegadores da web e servidores da web, mas também possuem outros fins. Esse protocolo sempre estará trabalhando em conjuntos com mais outros dois  protocolos, o **_Transmission Control Protocol_ (TCP)** que é responsável pela transferência das informações, e o **_Internet Protocol_ (IP)** que cuida dos encaminhamentos dos dados. 
+
+
+
+####  Principais métodos HTTP
+
+* **GET - ** Solicita a representação de um recurso. Passando o estado atual do objeto  naquele momento.
+* **POST - ** Solicita a criação de um recurso.
+* **DELETE - ** Solicita a exclusão de um recurso.
+* **PUT - ** Solicita a atualização de um recurso.
 
 
 
@@ -74,7 +65,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
       	* **Cabeçalho Geral**
       	* **Cabeçalho de Requisição**
       	* **Cabeçalho de Entidades**
-   	* Mensagem
+      	* Mensagem
 
 ![Requisição http](https://documentation.help/DogeTool-HTTP-Requests-vt/http_requestmessageexample.png)
 
@@ -102,7 +93,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 
 
-### > Navegadores e como funcionam ?
+### Navegadores e como funcionam ?
 
 ​	A principal funcionalidade do navegador é apresentar um recurso da web que foi escolhido por um cliente por meio de uma request ao servidor, depois exibi-lo na janela do navegador. Esse "recurso" geralmente trata-se de um documento HTML, mas pode ser qualquer outro tipo de arquivo. O local desses recursos é especificado pelo usuário através de uma URI.
 
@@ -111,16 +102,24 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 ​	Um navegador é composto pelo os seguintes componentes :
 
 1. **User Interface** - Todas as áreas do display do navegador, exceto a janela principal responsável pela visualização da página requisitada.
+
 2. **Browser Engine** - Faz a triagem das ações entre a interface do usuário e o mecanismo de  de renderização.
+
 3. **Rendering Engine** - Exibe o conteúdo solicitado.
+
 4. **Networking** -  Responsável pelas chamadas de rede, como solicitações HTTP. Poussi a interface independente da plataforma e sub-implementação para cada plataforma.
+
 5. **Javascript Interpreter** - Analisa e executa o código javascript.
+
 6. **UI Backend** - Exibe uma interface genérica que não é específica da plataforma. Sob a interface, utiliza os métodos da interface do usuário do sistema operacional.
+
 7. **Data Persistence** - Refere-se à uma camada persistente, onde o navegador guarda diversos dados no disco rígido, como cookies. Definido como "banco de dados da web".
 
-![Estrutura de um navegador](https://miro.medium.com/max/1322/1*52xFpyJc1ZQ-AN1Kc_zkwA.png)
+   
 
 ​	Então, se digitarmos o endereço de uma página web no navegador o que é que acontece ?
+
+
 
  1. O Navegador vai para o servidor de DNS e encontra o endereço verdadeiro que o site esta hospedado.
 
@@ -132,7 +131,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
     
 
-### > DNS e como ele funciona?
+### DNS e como ele funciona?
 
 ​	**Domain Name System (DNS)**, como o nome já diz, é um tipo de registro que contém nomes de sites e seus respectivos endereços IP  adepto. Os **verdadeiros** endereços web não são sequência de palavras fáceis de lembrar, e sim um endereço ip, parecido com isso: `54.240.200.15` . Então o  DNS baseia-se em uma abstração ao nível do usuário, que permite que páginas sejam encontradas na internet. Cada um deles é único para cada site.
 
@@ -150,18 +149,12 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 
 > Obs: Os endereços existentes na internet possuem combinações extremamente numerosas, e esses servidores ajudam a catalogá-los.
+>
+> 
 
-![DNS em uma hospedagem](https://narodev.com/wp-content/uploads/2019/04/DS.png)
-
-
-
-### > O que é Hospedagem ?
+### O que é Hospedagem ?
 
 ​	Quando um provedor de hospedagem (HostGator) aloca espaço em um servidor da web para que um site armazene seus arquivos, isso significa que ele está hospedando um site. A hospedagem na Web disponibiliza os arquivos que compõem um site e que possibilita a visualização online. Todo site está hospedado em um servidor.
-
-
-
-![Funcionamento de um webserver](https://mdn.mozillademos.org/files/8659/web-server.svg)
 
 
 
@@ -174,8 +167,6 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 #### Servidor Web Dinâmico
 
 ​	Consiste em um servidor web estático com software adicional, mais comumente um servidor de aplicações e um banco de dados. É chamado "dinâmico" porque o servidor de aplicações **atualiza os arquivos hospedados antes de enviá-los** ao navegador através do servidor HTTP.
-
-
 
 
 
@@ -229,15 +220,89 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 ## Aprenda sobre APIs
 
+### O que é API 
+
+Aplication Programming Interface, ou Interface de Programação de Aplicativo, são conjuntos de rotinas documentados e disponibilizados  por uma aplicação para que outras aplicações possam consumir suas funcionalidades.
+
+Quando  uma aplicação web disponibiliza um conjunto de rotinas e padrões através de serviços web podemos chamar esse conjunto de API.
+
+
+
+### Web Services
+
+Serviços web ou web services, são soluções para aplicações se comunicarem independente de linguagem, softwares e hardwares utilizados. Inicialmente os serviços web foram criado para troca de mensagens utilizando a linguagem XML sobre o protocolo HTTP sendo identificado por URI(Uniform Resource Identifier). Praticamente deduz-se que web services são API's que se comunicam por meio de redes através do protocolo HTTP.
+
+> Todos Web Service é uma API, mas nem toda API é um Web Service.
+
+
+
+#### O que é SOAP 
+
+Simple Object Access Protocol (SOAP), ou Protocolo de acesso à objetos simples, é um protocolo baseado em XML para acessar web services principalmente por HTTP,  mas possui um meio de transporte genérico, portanto suporta outros protocolos. Desenvolvido para para facilitar as integrações entre  aplicações, pode-se dizer que SOAP é uma definição de como os web services se comunicam.
+
+> #### XML
+>
+> * XML - Extensible Markup Language.
+> * Linguagem de marcação criada  na década de 90 pela W3C.
+> * Objetivo de facilitar a separação de conteúdo.
+> * Sem limitações de criação de tags.
+> * Linguagem comum para integrações entre aplicações.
+
+
+
+#### Estrutura SOAP Message
+
+* **SOAP Envelope :**  É o primeiro elemento do  documento e é utilizado para encapsular toda a menssagem SOAP.
+* **SOAP Header :** É o elemento que possui informações de atributos e metadados da requisição.
+* **SOAP Body :** É o elemento que possui os detalhes da mensagem.
+
+
+
+#### WSDL e XSD
+
+**Web Services Description Language (WSDL)**,  usado para descrever web services, funciona como um contrato do serviço. A descrição é feita em um documento XML, onde é descrito o serviço, especificações de acesso, operações e métodos.
+
+**XML Schema Definition (XSD)**, é um schema no formato XML usado para definir a estrutura de dados que será validada no XML. Funciona como uma documentação de como deve ser montado o  SOAP Message que será enviado através de  Web Service
+
+
+
 ### Authentication
 
 * **OAuth**
 * **Basic Authentication**
 * **Token Authentication**
 
+
+
 ### REST
 
-### JSON APIs
+#### O que é REST
+
+Representational State Transfer, ou Transferência Representacional de Estado, é um estilo de arquitetura  de software que define a implementação  de um web service. Aceita formatos como  XML, JSON  ou outros.
+
+> REST não é um protocolo, e sim um design  de arquitetura para web services.
+
+
+
+#### Vantagens em se utilizar REST
+
+* Permite integrações entre aplicações e também cliente e servidor em  páginas web  e aplicações.
+
+* Utilizar métodos HTTP para definir a operação que está sendo passada.
+
+* Arquitetura de fácil compreensão.
+
+  
+
+### JSON
+
+JavaScript Object Notation, é uma formatação leve utilizada para troca de mensagens entre sistemas, usa-se de uma estrutura de chave e valor e também de listas ordenadas.
+
+<p align="center">
+    <img src="https://img.mandic.com.br/blog/2019/09/JSON-formato.png" alt="estrutura json"/>
+</p>
+
+
 
 
 
