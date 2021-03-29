@@ -2,9 +2,44 @@
 
 Estudando e compartilhando todo o conhecimento referente as etapas do **[back-end roadmap](https://roadmap.sh/backend)** que foi criado por [@kamranahmedse](https://github.com/kamranahmedse).
 
+
+
+# Sumário
+
+1.  [Internet]()
+   * Como a internet funciona
+   * O que é HTTP
+   * Navegadores e como funcionam
+   * DNS e como ele funciona
+   * O que é hospedagem
+
+2. [Conhecimento Basico de Frontend]()
+3. [SO e Conhecimentos Gerais]() 
+4. [Aprenda uma linguagem]()   
+5. [Sistema de Controle de Versão]()  
+6. [Bancos de Dados Relacionais]()       
+7. [Bancos de Dados NoSQL]() 
+8. [Mais sobre Bancos de Dados]() 
+9. [Aprenda sobre APIs]() 
+10. [Caching]() 
+11. [Conhecimentos de segurança web]() 
+12. [Teste]() 
+13. [CI/CD]() 
+14. [Principios de Design e Desenvolvimento]() 
+15. [Padrões de Arquitetura]() 
+16. [Motores de Busca]() 
+17. [Message Brokers]() 
+18. [Conteinerização vs Virtualização]() 
+19. [GraphQL]() 
+20. [Bancos de Dados orientados a grafos]() 
+21. [WebSockets]() 
+22. [Servidores Web]()
+
+
+
 # Internet
 
-### Como a internet funciona ?
+### Como a internet funciona
 
 ​	A internet é uma rede global de computadores conectados entre si  que comunicam-se através de um conjunto de protocolos padronizados. Tudo começou na década de 1960 como um projeto pesquisa do exército Estadunidense, 20 anos depois o projeto evoluiu para uma infraestrutura pública  com o apoio de universidades públicas e empresas privadas. Ao longo do tempo surgiram novas tecnologia mas o modo como a internet funciona não mudou muito, continua sendo uma forma de conectar todos os computadores e garantir que eles encontrem sempre uma maneira de permanecerem conectados.
 
@@ -118,7 +153,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
    
 
-​	Então, se digitarmos o endereço de uma página web no navegador o que é que acontece ?
+​	**Então, se digitarmos o endereço de uma página web no navegador o que é que acontece ?**
 
 
 
@@ -207,15 +242,67 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 ### ORMs
 
+
+
 ### ACID
+
+
 
 ### Transactions
 
+
+
 ### N+1 Problem
+
+
 
 ### Database Normalization
 
+
+
 ### Indexes and how they work
+
+#### O que é um índice
+
+Índices nos bancos de dados são utilizados para facilitar a busca de informações em uma tabela com o menor número possível de operações de leituras, tornando assim a busca mais rápida e eficiente.
+
+
+
+**Dicas a serem consideradas na hora de criar índices**
+
+*Campos para serem indexados afim de ganhar desempenho*
+
+* Chaves primárias;
+* Chaves estrangerias;
+* Colunas acessadas por ranges (between);
+* Campos utilizados em groupBy ou orderBy;
+
+*Campos que não devem ser indexados*
+
+* Campos dos tipos: text, image, decimais;
+* Campos calculados;
+* Campos com alta cardinalidade (Masculino ou Feminino);
+
+#### Mantendo a integridade dos índices
+
+Tabelas que sofrem muitas alterações tais como *Insert, Update* e *Delete*, refletem essas modificações nos índices, pois isso provoca espaços em brancos nas páginas da tabela. Estes espaços não utilizados refletem maior espaço em disco o que acarreta um desperdício de tempo ao percorrer a estrutura do índice.
+
+Para resolver esse problema é necessário manter a integridade dos índices. A opção `REORGANIZE` remove somente a fragmentação do nível folha e a opção  `REBUILD` reconstrói todos os níveis do índice.
+
+
+
+```sql
+ALTER INDEX {nome_indice | ALL } ON REBUILD
+ALTER INDEX {nome_indice | ALL } ON REORGANIZE
+```
+
+
+
+#### Métodos de acesso aos índices e tables
+
+Os acessos aos dados das tabelas e índices podem ser realizados de duas formas `SEEK`  ou `SCAN`.
+
+* 
 
 
 
@@ -461,7 +548,7 @@ A **arquitetura de micro serviços** é utilizada para desenvolver uma aplicaç�
 
 ## Message Brokers
 
-O message broker permite identificar o motivo de um determinado serviço ter sido incapaz de responder no momento de uma requisição.
+O message broker é um intermediário entre as conexões realizadas e os serviços, permite identificar o motivo de um determinado serviço ter sido incapaz de responder no momento de uma requisição, aumentando a segurança  e evitando o retorno de condições indevidas ao sistema.
 
 ### Kafka
 
