@@ -296,7 +296,16 @@ ALTER INDEX {nome_indice | ALL } ON REORGANIZE
 
 Os acessos aos dados das tabelas e índices podem ser realizados de duas formas `SEEK`  ou `SCAN`.
 
-* 
+* **SCAN** - busca em todos os elementos da estrutura(tabela ou índice). É utilizado quando não possui índices que não atendam a instrução de SELECT ou quando a quantidade de registros que a query retorna  é grande.
+* **SEEK** - busca binária nos elementos de um índice. É utilizado quando existe um índice que é adequado e a quantidade de registros retornados é pequena.
+
+**Sendo assim, é possível executar as seguintes operações para acesso nas tabelas/índices:**
+
+* **TABLE SCAN** - Busca todos os elementos da tabela de forma sequencial.
+* **INDEX SCAN** - Busca em todos os elementos de um índice nonclustered, de forma sequencial.
+* **INDEX SEEK** - Busca binária num índice noclustered.
+* **CLUSTERED INDEX SCAN** - Busca em todos os elementos de um índice clustered, de forma sequencial.
+* **INDEX SEEK** - Busca binária em um índice clustered.
 
 
 
