@@ -2,17 +2,11 @@
 
 Estudando e compartilhando todo o conhecimento referente as etapas do **[back-end roadmap](https://roadmap.sh/backend)** que foi criado por [@kamranahmedse](https://github.com/kamranahmedse).
 
-
-
 # Sumário
+<details>
+<summary>Mostrar capítulos</summary>
 
 1.  [Internet]()
-   * Como a internet funciona
-   * O que é HTTP
-   * Navegadores e como funcionam
-   * DNS e como ele funciona
-   * O que é hospedagem
-
 2. [Conhecimento Basico de Frontend]()
 3. [SO e Conhecimentos Gerais]() 
 4. [Aprenda uma linguagem]()   
@@ -34,7 +28,7 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 20. [Bancos de Dados orientados a grafos]() 
 21. [WebSockets]() 
 22. [Servidores Web]()
-
+</details>
 
 
 # Internet
