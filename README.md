@@ -6,28 +6,28 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 <details>
 <summary>Mostrar capítulos</summary>
 
-1.  [Internet]()
-2. [Conhecimento Basico de Frontend]()
-3. [SO e Conhecimentos Gerais]() 
-4. [Aprenda uma linguagem]()   
-5. [Sistema de Controle de Versão]()  
-6. [Bancos de Dados Relacionais]()       
-7. [Bancos de Dados NoSQL]() 
-8. [Mais sobre Bancos de Dados]() 
-9. [Aprenda sobre APIs]() 
-10. [Caching]() 
-11. [Conhecimentos de segurança web]() 
-12. [Teste]() 
-13. [CI/CD]() 
-14. [Principios de Design e Desenvolvimento]() 
-15. [Padrões de Arquitetura]() 
-16. [Motores de Busca]() 
-17. [Message Brokers]() 
-18. [Conteinerização vs Virtualização]() 
-19. [GraphQL]() 
-20. [Bancos de Dados orientados a grafos]() 
-21. [WebSockets]() 
-22. [Servidores Web]()
+1.  [Internet](https://github.com/causticroot/backend-knowledge-progression#internet)
+2. [Conhecimento Basico de Frontend](https://github.com/causticroot/backend-knowledge-progression#conhecimento-b%C3%A1sico-de-frontend)
+3. [SO e Conhecimentos Gerais](https://github.com/causticroot/backend-knowledge-progression#so-e-conhecimentos-gerais) 
+4. [Aprenda uma linguagem](https://github.com/causticroot/backend-knowledge-progression#aprenda-uma-linguagem-c-ruby)   
+5. [Sistema de Controle de Versão](https://github.com/causticroot/backend-knowledge-progression#sistema-de-controle-de-vers%C3%A3o)  
+6. [Bancos de Dados Relacionais](https://github.com/causticroot/backend-knowledge-progression#bancos-de-dados-relacionais-mysql-postgresql)       
+7. [Bancos de Dados NoSQL](https://github.com/causticroot/backend-knowledge-progression#bancos-de-dados-nosql-mongodb) 
+8. [Mais sobre Bancos de Dados](https://github.com/causticroot/backend-knowledge-progression#mais-sobre-bancos-de-dados) 
+9. [Aprenda sobre APIs](https://github.com/causticroot/backend-knowledge-progression#mais-sobre-bancos-de-dados) 
+10. [Caching](https://github.com/causticroot/backend-knowledge-progression#caching) 
+11. [Conhecimentos de segurança web](https://github.com/causticroot/backend-knowledge-progression#conhecimento-de-seguran%C3%A7a-web) 
+12. [Teste](https://github.com/causticroot/backend-knowledge-progression#teste) 
+13. [CI/CD](https://github.com/causticroot/backend-knowledge-progression#cicd) 
+14. [Principios de Design e Desenvolvimento](https://github.com/causticroot/backend-knowledge-progression#princ%C3%ADpios-de-design-e-desenvolvimento) 
+15. [Padrões de Arquitetura](https://github.com/causticroot/backend-knowledge-progression#padr%C3%B5es-de-arquitetura) 
+16. [Motores de Busca](https://github.com/causticroot/backend-knowledge-progression#motores-de-busca) 
+17. [Message Brokers](https://github.com/causticroot/backend-knowledge-progression#message-brokers) 
+18. [Conteinerização vs Virtualização](https://github.com/causticroot/backend-knowledge-progression#conteineriza%C3%A7%C3%A3o-vs-virtualiza%C3%A7%C3%A3o) 
+19. [GraphQL](https://github.com/causticroot/backend-knowledge-progression#graphql) 
+20. [Bancos de Dados orientados a grafos](https://github.com/causticroot/backend-knowledge-progression#bancos-de-dados-orientados-a-grafos) 
+21. [WebSockets](https://github.com/causticroot/backend-knowledge-progression#websockets) 
+22. [Servidores Web](https://github.com/causticroot/backend-knowledge-progression#servidores-web)
 </details>
 
 
@@ -486,7 +486,7 @@ public class RetanguloGeometrico()
 
 O princípio da responsabilidade única é um dos princípios mais simples porém um dos mais difíceis de  pratica corretamente. Agrupar responsabilidades é algo natural do ser humano e, encontrar e separar essa responsabilidades umas das outras é a parte da essência do Projeto de software.
 
-**Open closed**
+##### **Open closed**
 
 ​	O princípios do aberto/fechado é o mais importante entre todos os da categoria  de princípios de classes, já que todos os demais de certa forma, são derivados de  *Open closed*. Este princípios surgiu  no trabalho de *Bertran Meyer*, que é reconhecido como autoridade no paradigma de orientação a objetos.
 
