@@ -446,7 +446,51 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 
 ## Princípios de Design e Desenvolvimento
 
-### SOLID
+### **SOLID**
+
+​	SOLID é um conjunto de princípios (princípios de Projeto de classes)  que propõe uma maneira para desenvolvimento sob uma perspectiva da orientação a objetos, visando à gestão de dependências  e combate aos sintomas do apodrecimento do código-fonte, permeando a construção de melhores códigos do ponto de vista do Projeto de construção de software. 
+
+​	S.O.L.I.D é uma concatenação das inicias dos nomes dos cincos princípios abordados, sendo estes: 
+
+* ***S* ingle esponsibility -** princípio da responsabilidade única.
+* ***O* pen closed-** princípio Aberto/Fechado.
+* ***L* iskov substitution -** princípio da substituição de Liskov.
+* ***I* nterface segregation -** princípio de segregação de interfaces.
+* ***D* ependency inversion -** princípio da inversão de dependência.
+
+##### Single responsibility 
+
+​	O princípio da responsabilidade única tem como base a coesão. Coesão mede a capacidade da classe em executar uma única função. Classes com alto índice de coesão são mais fáceis de se entender e, também , mais fáceis de manter. Se uma classe tiver mais de uma razão para mudar, isso significa que as responsabilidades que causam essas mudanças devem ser separadas em outras classes. Alterações em uma responsabilidade podem prejudicar ou inibir a habilidade da classe em lidar com outras responsabilidades. Esse tipo de acoplamento leva a projeto mais frágeis que "quebram" de maneiras inesperadas quando alterados.
+
+**Exemplo:**
+
+```csharp
+public class Retangulo()
+{
+    //Aplicação gráfica (desenha um retângulo na tela)
+    public void Desenhar()
+    {
+        //desenha
+    }
+}
+
+public class RetanguloGeometrico()
+{
+    //Aplicação de computção gemétrica (calcula o valor da área do retângulo)
+    public double CalcularArea()
+    {
+        return 0;
+    }
+}
+```
+
+O princípio da responsabilidade única é um dos princípios mais simples porém um dos mais difíceis de  pratica corretamente. Agrupar responsabilidades é algo natural do ser humano e, encontrar e separar essa responsabilidades umas das outras é a parte da essência do Projeto de software.
+
+**Open closed**
+
+​	O princípios do aberto/fechado é o mais importante entre todos os da categoria  de princípios de classes, já que todos os demais de certa forma, são derivados de  *Open closed*. Este princípios surgiu  no trabalho de *Bertran Meyer*, que é reconhecido como autoridade no paradigma de orientação a objetos.
+
+​	Este princípio afirma que  quando uma mudança simples em um sistema acarreta um efeito cascata de mudanças para os módulos dependentes, o sistema exibe atributos indesejados que são ligados ao mau projeto. O sistema se torna frágil, rígido, imprevisível e não reutilizável. O open closed ataca esse estado de uma maneira muito direta, dizendo para o Projeto criar módulos que nunca mudem. Quando os requisitos mudam, o comportamento da classe afetada deve ser alterada pela adição de código, e não pela alteração de código já existente e que funcione.
 
 ### KISS
 
