@@ -198,15 +198,19 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 ​	Consiste em um servidor web estático com software adicional, mais comumente um servidor de aplicações e um banco de dados. É chamado "dinâmico" porque o servidor de aplicações **atualiza os arquivos hospedados antes de enviá-los** ao navegador através do servidor HTTP.
 
-
+[Back to top](#)
 
 ## Conhecimento Básico de Frontend 
 
 
 
+[Back to top](#)
+
 ## SO e Conhecimentos Gerais
 
 
+
+[Back to top](#)
 
 ## Aprenda uma linguagem (C#, Ruby)
 
@@ -216,6 +220,8 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 
 
+[Back to top](#)
+
 ## Sistema de Controle de Versão
 
 ### Uso básico do Git
@@ -224,13 +230,19 @@ Estudando e compartilhando todo o conhecimento referente as etapas do **[back-en
 
 
 
+[Back to top](#)
+
 ## Bancos de Dados Relacionais (MySQL, PostgreSQL)
 
 
 
+[Back to top](#)
+
 ## Bancos de Dados NoSQL (MongoDB)
 
 
+
+[Back to top](#)
 
 ## Mais sobre Bancos de Dados
 
@@ -309,6 +321,8 @@ Os acessos aos dados das tabelas e índices podem ser realizados de duas formas 
 
 
 
+[Back to top](#)
+
 ## Aprenda sobre APIs
 
 ### O que é API 
@@ -324,6 +338,8 @@ Quando  uma aplicação web disponibiliza um conjunto de rotinas e padrões atra
 Serviços web ou web services, são soluções para aplicações se comunicarem independente de linguagem, softwares e hardwares utilizados. Inicialmente os serviços web foram criado para troca de mensagens utilizando a linguagem XML sobre o protocolo HTTP sendo identificado por URI(Uniform Resource Identifier). Praticamente deduz-se que web services são API's que se comunicam por meio de redes através do protocolo HTTP.
 
 > Todos Web Service é uma API, mas nem toda API é um Web Service.
+
+
 
 
 
@@ -394,6 +410,7 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 </p>
 
 
+[Back to top](#)
 
 ## Caching
 
@@ -407,6 +424,8 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 ### Client Side
 
 
+
+[Back to top](#)
 
 ## Conhecimento de Segurança Web
 
@@ -430,6 +449,8 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 
 
 
+[Back to top](#)
+
 ## Teste
 
 ### Integration Testing
@@ -440,9 +461,13 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 
 
 
+[Back to top](#)
+
 ## CI/CD
 
 
+
+[Back to top](#)
 
 ## Princípios de Design e Desenvolvimento
 
@@ -499,6 +524,8 @@ O princípio da responsabilidade única é um dos princípios mais simples poré
 ### DRY
 
 
+
+[Back to top](#)
 
 ## Padrões de Arquitetura
 
@@ -585,6 +612,8 @@ A **arquitetura de micro serviços** é utilizada para desenvolver uma aplicaç�
 
 
 
+[Back to top](#)
+
 ## Motores de Busca
 
 ### Elasticsearch
@@ -592,6 +621,8 @@ A **arquitetura de micro serviços** é utilizada para desenvolver uma aplicaç�
 ### Solr
 
 
+
+[Back to top](#)
 
 ## Message Brokers
 
@@ -601,11 +632,15 @@ O message broker é um intermediário entre as conexões realizadas e os serviç
 
 
 
+[Back to top](#)
+
 ## Conteinerização vs Virtualização
 
 ### Docker 
 
 
+
+[Back to top](#)
 
 ## GraphQL
 
@@ -613,15 +648,25 @@ O message broker é um intermediário entre as conexões realizadas e os serviç
 
 
 
+[Back to top](#)
+
 ## Bancos de Dados orientados a grafos
 
 
+
+[Back to top](#)
 
 ## WebSockets
 
 
 
+[Back to top](#)
+
 ## Servidores Web
+
+
+
+[Back to top](#)
 
 
 
