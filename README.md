@@ -465,7 +465,33 @@ JavaScript Object Notation, é uma formatação leve utilizada para troca de men
 
 ## CI/CD
 
+CI/CD, ou, Continuous integration/continuous delivery, é um método que visa a entrega frequente da aplicação para o clientes. Alcança-se esse objetivo automatizando e monitorando  etapas durante o desenvolvimento da aplicação
 
+> "Juntas, essas práticas relacionadas são muitas vezes chamadas de “pipeline de CI/CD” e são compatíveis com o trabalho conjunto das equipes de operações e desenvolvimento com métodos ágeis"
+
+**Principais conceitos:**
+
+* Integração contínua
+* Entrega contínua
+* Implantação contínua
+
+
+
+#### Continuous integration
+
+O caminho feliz da entrega contínua (build -> teste -> merge) acontece quando uma nova alteração o código é desenvolvida, testada e consolidada em um repositório compartilhado. Isso soluciona problemas de conflitos entre as branches quando muitas aplicações são desenvolvidas de maneira simultânea.
+
+#### Continuous delivery  
+
+A entrega contínua está mais reacionada a automação  das fases mais avançadas do pipeline, mas também são usadas para ilustrar o nível de automação presente. Entrega contínua e/ou Implantação contínua, são conceitos relacionados e usados alternadamente às vezes.
+
+A entrega contínua  representa as alterações testadas feitas pelo desenvolvedor, liberando essas alterações automaticamente para o repositório ou em registro de container. Garantindo o mínimo de esforços na implantação de novos códigos.
+
+Por outro lado a implantação contínua se refere ao lançamento automática dessas alterações feitas pelo desenvolvedor à produção, a partir desse ponto as alterações chegam aos clientes. 
+
+
+
+![CI/CD flow](https://www.redhat.com/cms/managed-files/ci-cd-flow-desktop_1.png)
 
 [Back to top](#)
 
